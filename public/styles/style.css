@@ -1,0 +1,246 @@
+.container {
+/*  opacity: 1;*/
+}
+
+#allContent .panel,
+#allContent .panel-heading,
+#allContent .panel-body {
+  background-color: rgba(90, 82, 82, 0.5);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(105, 105, 105, 0.5);
+}
+
+body {
+  background-image: url(../images/fons2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ocult {
+  display: none;
+}
+
+textarea {
+  width: 70%;
+  border: 1px solid darkseagreen;
+    
+}
+
+.postName{
+  width: 70%;
+  border: 1px solid darkseagreen;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.postCommentPost{
+  width: 70%;
+  border: 1px solid darkseagreen;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.oneComment{
+   width: 70%;
+  border: 1px solid darkseagreen;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+  
+
+
+.titolilogo {
+  display: flex;
+  justify-content: space-between;
+  color: darkseagreen;
+}
+
+.titolilogo h4 {
+  flex-grow: 1;
+}
+
+.titolilogo a {
+  display: inline-block;
+  width: 100%;
+}
+
+.mainlogo img {
+  width: 30px;
+  height: 30px;
+}
+
+.upcoming {
+  color: darkseagreen;
+}
+
+.dades {
+  display: flex;
+  flex-direction: column;
+  color: darkseagreen;
+}
+
+input {
+  color: darkseagreen;
+  border: 1px solid darkseagreen;
+  margin-bottom: 10px;
+}
+
+.bodycontent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#map {
+  color: darkseagreen;
+  text-align: center;
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  color: darkseagreen;
+}
+
+th {
+  text-align: center;
+}
+
+.esquerra,
+.dreta {
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  border: 2px solid darkseagreen;
+  color: darkseagreen;
+}
+
+.info {
+  color: darkseagreen;
+}
+
+.fall {
+  color: darkseagreen;
+  border: 1px ridge darkseagreen;
+  padding: 3px;
+}
+
+.data {
+  text-align: center;
+  color: white;
+  background: darkseagreen;
+}
+
+.upcoming {
+  margin-left: 10px;
+}
+
+.partits {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: darkseagreen;
+}
+
+.vs {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: darkseagreen;
+  font-weight: bold;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.escut {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.escut img {
+  width: 100%;
+}
+
+.fall {
+  text-align: center;
+}
+
+.panel-default>.panel-heading {
+  background-color: white;
+  margin-top: 5px;
+ 
+}
+
+.panel-group {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+ 
+
+.btn-info {
+  color: white;
+  background-color: darkseagreen;
+}
+
+.btn-success {
+  color: white;
+  background-color: darkseagreen;
+}
+
+.botons {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#loginButton {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: white;
+  background-color: darkseagreen;
+  margin-bottom: 10px;
+ 
+}
+
+#loginButton input {
+  display: inline-block;
+  width: 100%;
+}
+
+.logout {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+#logOutButton {
+  
+  
+  align-content: center;
+  display: flex;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: darkseagreen;
+  background-color: rgba(90, 82, 82, 0.5);
+   
+}

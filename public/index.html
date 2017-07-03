@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>NYSL Home - Northside Youth Soccer League</title>
+
+  <!--<link rel="shortcut icon" sizes="128x128" href="app_icon128.png">
+  <link rel="shortcut icon" sizes="196x196" href="app_icon196.png">-->
+  <link rel="apple-touch-icon" href="app_icon60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="app_icon76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="app_icon120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="app_icon152.png">
+  <link rel="shortcut icon" sizes="196x196" href="images/nysl_logo.png">
+  <link rel="apple-touch-startup-image" href="images/nysl_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" integrity="sha256-fmMNkMcjSw3xcp9iuPnku/ryk9kaWgrEbfJfKmdZ45o=" crossorigin="anonymous" />
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+
+  <div id="allContent" class="container">
+
+    <div class="panel-group" id="panelsignin">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="titolilogo">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse1">SIGN IN</a>
+            </h4>
+            <div class="mainlogo">
+              <img src="images/nysl_logo.png">
+            </div>
+          </div>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="signin">
+            <div class="bodycontent">
+              <div class="dades">
+
+                <label for="e-mail"> e-mail</label>
+                <input type="text" name="user's email" id="e-mail">
+                <label for="password">password</label>
+                <input type="password" name="user's password" id="password">
+                <button type="button" id="loginButton">LOG IN AND JOIN US</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel-group two">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="titolilogo">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse2">UPCOMING EVENTS</a>
+            </h4>
+            <div class="mainlogo">
+              <img src="images/nysl_logo.png">
+            </div>
+          </div>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="home">
+            <div class="bodycontent">
+              <div class="upcoming">
+                <h3>August 4</h3>
+                <p class="indent">NYSL Fundraiser</p>
+
+                <h3>August 16</h3>
+                <p class="indent">Season Kick-off: Meet the Teams</p>
+
+                <h3>September 1</h3>
+                <p class="indent"> First Game of the Season (Check Game Schedule for details)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="panel-group three">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="titolilogo">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#collapse3">CONTACT US</a>
+              </h4>
+              <div class="mainlogo">
+                <img src="images/nysl_logo.png">
+              </div>
+            </div>
+          </div>
+
+          <div id="collapse3" class="panel-collapse collapse">
+
+
+            <div class="bodycontent">
+              <p>Please email us at <a href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a></p>
+
+              <p>We will reply to your email as soon as we can.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group four">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="titolilogo">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse4">CALENDAR</a>
+            </h4>
+            <div class="mainlogo">
+              <img src="images/nysl_logo.png">
+            </div>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body"></div>
+            <div class="schedule">
+              <div class="esquerra">
+                <h3>Matches</h3>
+                <table class="table table-striped">
+                  <thead>
+                    <th>Team 1</th>
+                    <th>Team 2</th>
+                    <th>Details</th>
+                  </thead>
+
+                  <tbody id="matches">
+                  </tbody>
+                </table>
+              </div>
+              <div class="dreta">
+                <h3>Details</h3>
+                <div id="match">
+                  <div class="details">
+                    <span>INFORMATION</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="map">
+
+              <div id="AJ">
+                <h4>AJ Katzenmaier Elementary</h4> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.656836443397!2d-87.63126038489939!3d41.900236679220356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1493893356198" height="250" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                <button class="BACK" type="button">Back</button>
+
+              </div>
+
+              <div id="Greenbay">
+                <h4>Greenbay Elementary</h4> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0251959124903!2d-87.64023168489892!3d41.91381707921925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1493893665500" height="250" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                <button class="BACK" type="button">Back</button>
+              </div>
+
+              <div id="Howard">
+                <h4>Howard A Yeager Elementary</h4> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.585683085617!2d-87.66511458489856!3d41.92326457921868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1493893713184" height="250" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                <button class="BACK" type="button">Back</button>
+              </div>
+
+
+              <div id="Marjorie">
+                <h4>Marjorie P Hart Elementary</h4> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5936.577333503602!2d-87.65034796735124!3d41.929648079218154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1493893762061" height="250" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                <button class="BACK" type="button">Back</button>
+              </div>
+
+              <div id="North">
+                <h4>North Elementary </h4> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5938.67285553385!2d-87.6505470673521!3d41.907125979219906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1493893807996" height="250" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                <button class="BACK" type="button">Back</button>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="fall">
+              <h2>Fall Schedule</h2>
+              <p class="announcement">*All games take place on Saturday</p>
+
+              <p><br><strong>Facility Type:</strong> Outdoor</p>
+              <p><strong>Additional Information:</strong> If deemed necessary by NYSL, games may be shortened or cancelled due to extreme weather conditions.</p>
+
+              <p><strong>Please direct all questions to:</strong> Michael Randall, League Coordinator</p>
+              <address>
+      <p><span style="float: left;"><strong>Phone:</strong> (630) 690-8132</span></p>
+      <p style="text-align: right"><strong>Email:</strong> <a href="mailto:michael.randall@chisoccer.org">michael.randall@chisoccer.org</a></p>
+    </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="logout">
+    <button type="button" id="logOutButton">LOG OUT (SEE YOU SOON!)</button>
+  </div>
+
+
+
+</body>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD1dKbjNe-bh5aqnQdrWz_tZVwl3T76jtU",
+    authDomain: "tascanyslwebsite.firebaseapp.com",
+    databaseURL: "https://tascanyslwebsite.firebaseio.com",
+    projectId: "tascanyslwebsite",
+    storageBucket: "tascanyslwebsite.appspot.com",
+    messagingSenderId: "849934654943"
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+<script type="text/javascript" src="scripts/main.js"></script>
+
+</html>
